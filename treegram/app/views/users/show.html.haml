@@ -1,0 +1,36 @@
+.row.top_row
+  .col-sm-6.user_att
+    %h2= @user.email
+    - if @user.avatar_file_name
+      = image_tag @user.avatar.url(:thumb)
+  .col-sm-6
+    = link_to 'Logout', log_out_path, class: ['btn', 'btn-danger', 'logout_btn']
+  .row
+    = link_to 'Add Photo', new_user_photo_path(@user), class: ['btn', 'btn-success', 'add_photo_btn']
+    = link_to 'Follow Users', user_follows_path(@user), class: ['btn', 'btn-primary', 'follow_users_btn']
+  %br/
+  %h1.title Treegram
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+.row
+  - @connected_users.each do |cu|
+    - user_photo_list = cu.photos.sort.reverse
+    - if user_photo_list.any?
+      .well.col-sm-8
+        - del = "false"
+        - if cu == current_user
+          %h4.text My photos
+          - del = "true"
+        - else
+          %h4.text= cu.email
+        %h5#caption.text= user_photo_list.first.title
+        %img#slide.imageCSS{alt: "", src: user_photo_list.first.image.url(:medium), href: user_photo_comments_path(@user, user_photo_list.first), 
+                            href_delete: user_photo_path(@user, user_photo_list.first), del_option: del}
+          #slides
+            - user_photo_list.each do |photo|
+              %img{alt: photo.title , src: photo.image.url(:medium), href: user_photo_comments_path(@user, photo), 
+                   href_delete: user_photo_path(@user, photo), del_option: del}  

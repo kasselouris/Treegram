@@ -1,0 +1,8 @@
+%h1 Add a Photo
+= form_for Photo.new(), :url => user_photos_path, :html => {:multipart => true} do |form|
+  = form.label :title
+  %br
+  = form.text_field :title
+  %br
+  = form.file_field :image
+  = form.submit 'Upload'

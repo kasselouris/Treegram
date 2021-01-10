@@ -1,0 +1,8 @@
+%h1 Treegram
+%h2 Your Favorite Tree Photosharing Service
+.row
+  .col-sm-4
+    = link_to 'Login', log_in_path, class: ["btn", "btn-success", 'btn-lg']
+    = link_to 'Sign Up', new_user_path, class: ['btn', 'btn-success', 'btn-lg']
+  .col-sm-7
+    = image_tag "background.jpg"

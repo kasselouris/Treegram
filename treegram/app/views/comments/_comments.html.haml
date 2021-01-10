@@ -1,0 +1,22 @@
+%h3.text Comments
+- if @photo_comments.any?
+  - @photo_comments.sort.reverse.each do |pc|
+    .bold-text= "#{pc.user.email}: "
+    .normal-text= pc.comment_text
+    %br
+- else
+  .text No comments for this photo yet!  
+
+
+%br
+%br
+.text
+  = form_for Comment.new(), :url => user_photo_comments_path do |form|
+    = label :comment_text, 'Add a Comment'
+    %br
+    = form.text_area :comment_text
+    %br
+    = form.submit 'Post'
+
+%br
+#closeLink.bold-text= link_to 'Close(X)', user_path(current_user)

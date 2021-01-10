@@ -1,0 +1,10 @@
+%h1 List of all Users
+%table#users
+  %tbody
+    - @users_no_current.each do |user|
+      %tr
+        %td.bold-text= user.email
+        %td= button_to 'Follow', {:controller => 'follows', :action => 'create', :followed_id => user.id}, {:method => :post }
+
+%br
+.bold-text= link_to 'Back to menu', user_path(current_user)

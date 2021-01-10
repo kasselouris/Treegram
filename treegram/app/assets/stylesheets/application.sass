@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body
+  font-family: 'Open Sans Condensed', sans-serif
+  background-color: hsl(182, 25, 90)
+
+a
+  text-decoration: none
+  color: black
+
+.logout_btn
+  position: fixed
+  right: 0
+  padding: 3%
+  margin: 15px
+
+.top_row
+  max-height: fill-avaliable
+
+.add_photo_btn
+  position: fixed
+  right: 8%
+  padding: 3%
+  margin: 15px
+
+.follow_users_btn
+  position: fixed
+  right: 17%
+  padding: 3%
+  margin: 15px
+
+.email
+  font-size: 7em
+
+.user_att
+  position: fixed
+  left: 0
+  margin-left: 15px
+
+.text
+  text-align: center
+  font-weight: bold
+
+.title
+  position: absolute
+  right: 55%
+  font-size: 500%
+  font-weight: 400
+  font-style: italic
+
+#slides img 
+  display: none
+
+.imageCSS
+  right: 31%
+  transform: translateX(31%)
+  width: 450px
+  height: 300px
+  object-fit: contain
+
+#photoInfo 
+  padding: 2ex
+  position: fixed
+  border: 2px double grey
+  background: hsl(120, 25, 90)
+
+.bold-text, .normal-text 
+  display: inline-flex
+
+.bold-text
+  font-weight: bold
+
+.normal-text 
+  font-size: 16px
