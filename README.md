@@ -1,10 +1,6 @@
 # Treegram
 
-
-
-==============
-
-A simple ruby on rails app. Allows a user to create an account with username, password, and avatar. After login user can upload photos to their account and tag other users in the photos.
+A simple ruby on rails web app. Allows a user to create an account with username, password, and avatar. After login user can upload photos to their account, follow other users and add comments to pictures.
 
 Installation and Usage
 ------------
@@ -21,24 +17,27 @@ $ rails server
 In your browser visit localhost:3000
 
 
-Authors
-------
+Treegram Tutorial
+-----------------
+- **Hover mouse** over a users picture for a slideshow presentation all its pictures
 
-Kathryn Carr, J Sivakumaran, and Lizzie Koehler
+<img src="https://github.com/kasselouris/Treegram/blob/main/assets/slideshow.gif" />
 
-(modified by S. Anastasiadis and A. Katsoulieris for the course MYE042 Internet Technologies, Department of Computer Science and Engineering, School of Enginering, University of Ioannina, Ioannina, Greece)
+- **Click** a picture to show a pop up window with its latest comments and a text-box area to add a new comment or **Right Click** a picture in order to delete it and all its comments
 
+<img src="https://github.com/kasselouris/Treegram/blob/main/assets/comments_and_delete.gif" />
+
+> For more pictures and gifs about Treegram check the [assets folder.](https://github.com/kasselouris/Treegram/tree/main/assets)
+
+Version
+-------
+
+> ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
+
+> Rails 5.2.1
 
 
 License
 -------
 
 MIT license
-
-
-Version
--------
-
-ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
-
-Rails 5.2.1
