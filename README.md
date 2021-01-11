@@ -6,7 +6,7 @@ Installation and Usage
 ------------
 Run Postgres Server
 
-Clone or download this repository and cd into indent directory
+Clone or download this repository and cd into treegram/app folder
 
 ```
 $ rake db:create
