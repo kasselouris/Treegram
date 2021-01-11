@@ -1,6 +1,6 @@
-Treegram
+# Treegram
 
-(modified by S. Anastasiadis and A. Katsoulieris for the course MYE042 Internet Technologies, Department of Computer Science and Engineering, School of Enginering, University of Ioannina, Ioannina, Greece)
+
 
 ==============
 
@@ -8,7 +8,7 @@ A simple ruby on rails app. Allows a user to create an account with username, pa
 
 Installation and Usage
 ------------
-Run Postrges Sever
+Run Postgres Server
 
 Clone or download this repository and cd into indent directory
 
@@ -20,27 +20,24 @@ $ rails server
 
 In your browser visit localhost:3000
 
-Motivation
---------
-> **To Practice:**
->- Ruby On Rails project setup
->- User authentication
->- Paperclip gem for uploading files
->- SASS 
->- Unit testing with RSPEC
->- Integration testing with CAPYBARA
 
 Authors
 ------
 
 Kathryn Carr, J Sivakumaran, and Lizzie Koehler
 
+(modified by S. Anastasiadis and A. Katsoulieris for the course MYE042 Internet Technologies, Department of Computer Science and Engineering, School of Enginering, University of Ioannina, Ioannina, Greece)
+
+
+
 License
 -------
 
 MIT license
 
-bug1) after a click on a photo and after we move our cursor out of the photo  it goes back to the first photo
+
+Version
+-------
 
 ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
 
